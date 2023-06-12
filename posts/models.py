@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 from django.templatetags.static import static
+from django.contrib.auth.models import AbstractUser
 
 
 
@@ -55,7 +56,8 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    
     timestamp = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
     post = models.ForeignKey(

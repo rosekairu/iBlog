@@ -5,7 +5,7 @@
     <div class="card bg-light mb-4 py-lg-4">
       <div class="card-body text-center">
         <h2 class="h3 mb-3">About me</h2>
-        
+        {% if author %}
           {% if author.profile_picture %}
             <img class="rounded-circle mb-3" src="{{ author.profile_picture.url }}" alt="Profile Picture" width="100">
           {% else %}
@@ -16,7 +16,9 @@
           {% else %}
             <p class="text-sm text-muted">No description available.</p>
           {% endif %}
-
+        {% else %}
+          <p class="text-sm text-muted">Author not found.</p>
+        {% endif %}
       </div>
       
     </div>

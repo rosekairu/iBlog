@@ -68,7 +68,8 @@ def post(request, id):
 
     if request.method == "POST":
         if form.is_valid():
-            form.instance.user = request.user
+            if request.user.is_authenticated:
+                form.instance.user = request.user
             form.instance.post = post
             form.save()
             return redirect(reverse("post-detail", kwargs={
