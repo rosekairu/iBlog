@@ -162,8 +162,7 @@ trove-classifiers==2023.5.2
 typed-ast==1.5.4
 typing_extensions==4.5.0
 tzdata==2022.5
-ubuntu-advantage-tools==8001
-ubuntu-drivers-common==0.0.0
+
 ufw==0.36.1
 unattended-upgrades==0.1
 urllib3==1.26.5
