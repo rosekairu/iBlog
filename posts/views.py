@@ -14,7 +14,8 @@ def get_author(user):
 
 def home(request):
     recent = Post.objects.latest('date')
-    author = get_author(request.user)
+    author = get_author(request.user)    
+
     context = {
         'recent': recent,
         'author': author,

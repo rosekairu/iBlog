@@ -10,13 +10,16 @@
             {% for category in recent.categories.all %}
             <a class="category-link mb-3 d-inline-block" href="#!">{{category}}</a> 
             {% endfor%}
-            <h1>{{recent.title}}</h1>
+            
+            <h1> <a class="d-block reset-anchor" href="{{ recent.get_absolute_url }}"> {{recent.title}} </h1>
+            
             <img class="w-100 mb-5" src="{{ recent.thumbnail.url }}" alt="..." style="max-width: 300px; height: auto;">
             <p>{{recent.overview | safe }}</p>
+            
             <!--p class="lead drop-caps mb-5">{{recent.content | safe }}</p-->
             <ul class="list-inline mb-5">
               <li class="list-inline-item mx-2"><a class="text-uppercase text-muted reset-anchor" href="#!">{{recent.author}}</a></li>
-              <li class="list-inline-item mx-2"><a class="text-uppercase text-muted reset-anchor" href="#!">{{object.date}}</a></li>
+              <li class="list-inline-item mx-2"><a class="text-uppercase text-muted reset-anchor" href="#!">{{recent.date}}</a></li>
             </ul>
           </div>
         </div>
