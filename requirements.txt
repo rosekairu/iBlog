@@ -134,7 +134,7 @@ pyproject_hooks==1.0.0
 pyRFC3339==1.1
 pyrsistent==0.19.3
 pyte==0.8.1
-python-apt==2.4.0+ubuntu1
+
 python-dateutil==2.8.2
 python-debian===0.1.43ubuntu1
 python3-openid==3.2.0
