@@ -54,7 +54,7 @@ django-tinymce4-lite==1.8.0
 djangorestframework==3.13.1
 dominate==2.5.1
 dulwich==0.21.5
-duplicity==0.8.21
+
 evdev==1.6.1
 fasteners==0.14.1
 fenrir-screenreader==1.9.6.post1
