@@ -108,7 +108,7 @@ paramiko==2.9.3
 
 pexpect==4.8.0
 phonenumbers==8.12.29
-pikepdf==5.0.1+dfsg
+
 Pillow==9.0.1
 pkginfo==1.9.6
 platformdirs==3.5.1
